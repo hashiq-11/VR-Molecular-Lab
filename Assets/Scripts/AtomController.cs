@@ -67,6 +67,8 @@ public class AtomController : MonoBehaviour
 
     private void OnDestroy()
     {
+        transform.DOKill();
+
         if (grabInteractable != null)
         {
             grabInteractable.selectEntered.RemoveListener(OnGrab);
@@ -83,8 +85,9 @@ public class AtomController : MonoBehaviour
 
             if (grabInteractable.isSelected)
             {
-                Debug.Log($"[Bond Check] {atomData.elementName} collided with {otherAtom.atomData.elementName}!");
+                BondManager.Instance.TryBond(this, otherAtom);
             }
         }
     }
+
 }
