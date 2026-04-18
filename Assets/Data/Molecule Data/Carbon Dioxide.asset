@@ -19,4 +19,4 @@ MonoBehaviour:
     requiredCount: 1
   - atomType: {fileID: 11400000, guid: af9eed4d26099154b9123d31d2a72086, type: 2}
     requiredCount: 2
-  completedPrefab: {fileID: 0}
+  completedPrefab: {fileID: 3988160147558462462, guid: 1e2453204aedbe741b958c027052dfcf, type: 3}

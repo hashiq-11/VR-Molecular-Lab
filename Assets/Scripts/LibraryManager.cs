@@ -89,20 +89,4 @@ public class LibraryManager : MonoBehaviour
             headerText.text = $"DISCOVERED: {discoveredMolecules.Count} / 7";
         }
     }
-
-    // DEBUG TOOLS
-    [ContextMenu("Debug: Discover Water")]
-    public void DebugDiscoverWater() { AddDiscovery("Water", "H2O"); }
-    [ContextMenu("Debug: Discover Ammonia")]
-    public void DebugDiscoverAmmonia() { AddDiscovery("Ammonia", "NH3"); }
-    [ContextMenu("Debug: Discover Methane")]
-    public void DebugDiscoverMethane() { AddDiscovery("Methane", "CH4"); }
-    [ContextMenu("Debug: Discover Oxygen")]
-    public void DebugDiscoverOxygen() { AddDiscovery("Oxygen Gas", "O2"); }
-    [ContextMenu("Debug: Discover Hydrogen")]
-    public void DebugDiscoverHydrogen() { AddDiscovery("Hydrogen Gas", "H2"); }
-    [ContextMenu("Debug: Discover Nitrogen")]
-    public void DebugDiscoverNitrogen() { AddDiscovery("Nitrogen Gas", "N2"); }
-    [ContextMenu("Debug: Discover Carbon Dioxide")]
-    public void DebugDiscoverCarbonDioxide() { AddDiscovery("Carbon Dioxide", "CO2"); }
 }

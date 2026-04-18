@@ -15,6 +15,8 @@ MonoBehaviour:
   validMolecules:
   - {fileID: 11400000, guid: 6a292c0220b41af4bbaae87081a16211, type: 2}
   - {fileID: 11400000, guid: a8d4ea859bb58314b9b47a93e8a94564, type: 2}
+  - {fileID: 11400000, guid: 61e33b8463b4a774a86176e98eef210c, type: 2}
   - {fileID: 11400000, guid: 80383a5ae70f4d7418e6dcbf345262cb, type: 2}
-  - {fileID: 11400000, guid: 631b9f087951b834b96f5b283e06bfa9, type: 2}
+  - {fileID: 11400000, guid: cbc39795ec4f6e4478d74230fff703b6, type: 2}
   - {fileID: 11400000, guid: ed539ca088717aa49bc10df6009f6e23, type: 2}
+  - {fileID: 11400000, guid: 631b9f087951b834b96f5b283e06bfa9, type: 2}

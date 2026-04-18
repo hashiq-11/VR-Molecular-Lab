@@ -2448,7 +2448,7 @@ Transform:
   m_GameObject: {fileID: 834060111}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0, z: 0.0733}
+  m_LocalPosition: {x: 0, y: -0, z: 0.0793}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5102,6 +5102,58 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3475118261464492563, guid: 9f3369e30fbd31f4bb596b1a99babe83, type: 3}
   m_PrefabInstance: {fileID: 1881060556}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1928529605
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1928529607}
+  - component: {fileID: 1928529606}
+  m_Layer: 0
+  m_Name: TEST_TOOLS
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &1928529606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1928529605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7281827bf95b3fd408d4c68d2542bfab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DebugSpawner
+  spawnPoint: {fileID: 834060112}
+  waterPrefab: {fileID: 5212238299695383028, guid: d947463a3fdc0634ba6fe2c153940a28, type: 3}
+  hydrogenPrefab: {fileID: 4581555239393194382, guid: 48494c3fbf465d6498738026ecc9dca9, type: 3}
+  oxygenPrefab: {fileID: 4048431612277123669, guid: 8bbf2fa1b8601ad41bd549bf0f382cbe, type: 3}
+  nitrogenPrefab: {fileID: 4799480800818655138, guid: 1e458734a9576324ba63903b09bc664a, type: 3}
+  ammoniaPrefab: {fileID: 1578060306450119011, guid: d016ee9e1fb87d947856e751787f0769, type: 3}
+  carbonDioxidePrefab: {fileID: 3988160147558462462, guid: 1e2453204aedbe741b958c027052dfcf, type: 3}
+  methanePrefab: {fileID: 5395714761000915824, guid: 8b416dcfe6017d14583d21348d47ff34, type: 3}
+--- !u!4 &1928529607
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1928529605}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.89227, y: 0, z: 27.83352}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1970626481
 GameObject:
   m_ObjectHideFlags: 0
@@ -5712,3 +5764,4 @@ SceneRoots:
   - {fileID: 789216518}
   - {fileID: 900275056}
   - {fileID: 2054854890}
+  - {fileID: 1928529607}

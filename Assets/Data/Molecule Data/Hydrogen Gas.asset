@@ -10,13 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9d474cbe69cc30445994a1d83306cd5d, type: 3}
-  m_Name: Methane
+  m_Name: Hydrogen Gas
   m_EditorClassIdentifier: Assembly-CSharp::MoleculeData
-  moleculeName: Methane
-  chemicalFormula: CH4
+  moleculeName: Hydrogen Gas
+  chemicalFormula: H2
   requiredAtoms:
-  - atomType: {fileID: 11400000, guid: 4b5203213d098ee4dbfca35f465f8e38, type: 2}
-    requiredCount: 1
   - atomType: {fileID: 11400000, guid: c95a2b791812cd9498f635bf02b8ea4b, type: 2}
-    requiredCount: 4
-  completedPrefab: {fileID: 5395714761000915824, guid: 8b416dcfe6017d14583d21348d47ff34, type: 3}
+    requiredCount: 2
+  completedPrefab: {fileID: 4581555239393194382, guid: 48494c3fbf465d6498738026ecc9dca9, type: 3}
