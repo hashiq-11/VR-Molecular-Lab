@@ -6,7 +6,7 @@ public class BondManager : MonoBehaviour
     public static BondManager Instance { get; private set; }
 
     [Header("Data")]
-    public MoleculeDatabase database; 
+    public MoleculeDatabase database;
 
     private void Awake()
     {
@@ -85,10 +85,17 @@ public class BondManager : MonoBehaviour
             Instantiate(molecule.completedPrefab, spawnPosition, Quaternion.identity);
         }
 
+        // --- NEW: UI Update ---
+        if (LibraryManager.Instance != null)
+        {
+            LibraryManager.Instance.AddDiscovery(molecule.moleculeName, molecule.chemicalFormula);
+        }
+
         // Destroy the loose atoms
         Destroy(a.gameObject);
         Destroy(b.gameObject);
     }
+
     /// <summary>
     /// Evaluates a list of atoms to see if they form a valid molecule.
     /// </summary>
@@ -116,6 +123,12 @@ public class BondManager : MonoBehaviour
             if (matchedMolecule.completedPrefab != null)
             {
                 Instantiate(matchedMolecule.completedPrefab, spawnPosition, Quaternion.identity);
+            }
+
+            // --- NEW: UI Update ---
+            if (LibraryManager.Instance != null)
+            {
+                LibraryManager.Instance.AddDiscovery(matchedMolecule.moleculeName, matchedMolecule.chemicalFormula);
             }
 
             // 4. Destroy the loose atoms
