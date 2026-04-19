@@ -19,22 +19,20 @@ A high-performance, data-driven VR chemistry simulation built with **Unity 6 LTS
 * **Decoupled Architecture:** Strictly followed the **Singleton pattern** for global managers while maintaining modular, component-based logic for physical objects to avoid monolithic scripts.
 * **Memory Management:** Implemented explicit event unsubscription and tween cleanup in `OnDestroy` to prevent memory leaks on mobile VR hardware (Meta Quest).
 
----
+##  Controls & Locomotion
 
-## **🎮 Controls & Locomotion**
+This project is optimized for **Meta Quest** controllers. For testing via the **XR Interaction Simulator** on PC, equivalent keyboard shortcuts are provided.
 
-| Action | Input (Left Controller) | Input (Right Controller) |
+| Action | VR Controller Input | PC Simulator Key |
 | :--- | :--- | :--- |
-| **Movement** | **Joystick (Continuous)** | — |
-| **Turning** | — | **Joystick (Snap/Continuous)** |
-| **Grab Atom/Flask** | **Grip Button** | **Grip Button** |
-| **Break Molecule** | **Trigger Button** (While Holding) | **Trigger Button** (While Holding) |
-| **UI Interaction** | **Trigger** (Hover + Click) | **Trigger** (Hover + Click) |
-| **Toggle Laser** | **Primary Button (X)** | **Primary Button (A)** |
+| **Movement** | **Left Joystick** | **W, A, S, D** |
+| **Turning** | **Right Joystick** | **Q, E** (Snap) |
+| **Grab Atom / Beaker** | **Grip Button** (Side) | **G** Key |
+| **Toggle Laser Ray** | **Primary Button (A / X)** | **Space** Key |
+| **Break Molecule** | **Trigger Button** | **Left Mouse Click** |
+| **UI Interaction** | **Trigger** (Hover + Click) | **Left Mouse Click** |
 
----
-
-## **📂 Project Organization**
+## ** Project Organization**
 * **`_ChemistryLab/Data`**: Centralized registry for all chemical definitions.
 * **`_ChemistryLab/Prefabs`**: Optimized XR Interactables with custom physics damping.
 * **`_ChemistryLab/Scripts`**: Clean C# scripts organized with `#region` blocks for readability.
