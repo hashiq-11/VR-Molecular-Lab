@@ -85,10 +85,19 @@ public class BondManager : MonoBehaviour
             Instantiate(molecule.completedPrefab, spawnPosition, Quaternion.identity);
         }
 
-        // --- NEW: UI Update ---
+        // --- UI Update ---
         if (LibraryManager.Instance != null)
         {
             LibraryManager.Instance.AddDiscovery(molecule.moleculeName, molecule.chemicalFormula);
+        }
+
+        if (AudioManager.Instance != null)
+        {
+            AudioManager.Instance.PlaySuccess();
+        }
+        else
+        {
+            Debug.LogWarning("[Architecture] AudioManager is missing! Success sound skipped.");
         }
 
         // Destroy the loose atoms
@@ -125,10 +134,19 @@ public class BondManager : MonoBehaviour
                 Instantiate(matchedMolecule.completedPrefab, spawnPosition, Quaternion.identity);
             }
 
-            // --- NEW: UI Update ---
+            // --- UI Update ---
             if (LibraryManager.Instance != null)
             {
                 LibraryManager.Instance.AddDiscovery(matchedMolecule.moleculeName, matchedMolecule.chemicalFormula);
+            }
+
+            if (AudioManager.Instance != null)
+            {
+                AudioManager.Instance.PlaySuccess();
+            }
+            else
+            {
+                Debug.LogWarning("[Architecture] AudioManager is missing! Success sound skipped.");
             }
 
             // 4. Destroy the loose atoms

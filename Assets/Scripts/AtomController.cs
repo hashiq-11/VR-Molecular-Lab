@@ -26,8 +26,8 @@ public class AtomController : MonoBehaviour
 
         grabInteractable = GetComponent<XRGrabInteractable>();
 
-        rb.linearDamping = 3f;  
-        rb.angularDamping = 3f; 
+        rb.linearDamping = 3f;
+        rb.angularDamping = 3f;
     }
 
     void Start()
@@ -50,8 +50,13 @@ public class AtomController : MonoBehaviour
 
         if (grabInteractable != null)
         {
+            // Grab Listeners
             grabInteractable.selectEntered.AddListener(OnGrab);
             grabInteractable.selectExited.AddListener(OnRelease);
+
+            // NEW: Hover Listeners
+            grabInteractable.hoverEntered.AddListener(OnHoverEnter);
+            grabInteractable.hoverExited.AddListener(OnHoverExit);
         }
     }
 
@@ -65,16 +70,40 @@ public class AtomController : MonoBehaviour
         transform.DOScale(originalScale, 0.1f);
     }
 
+    private void OnHoverEnter(HoverEnterEventArgs args)
+    {
+        // Only trigger hover scale if we aren't currently holding it
+        if (!grabInteractable.isSelected)
+        {
+            transform.DOScale(originalScale * 1.2f, 0.1f);
+        }
+    }
+
+    private void OnHoverExit(HoverExitEventArgs args)
+    {
+        // Only scale back down if we aren't currently holding it
+        if (!grabInteractable.isSelected)
+        {
+            transform.DOScale(originalScale, 0.1f);
+        }
+    }
+
     private void OnDestroy()
     {
         transform.DOKill();
 
         if (grabInteractable != null)
         {
+            // Remove Grab Listeners
             grabInteractable.selectEntered.RemoveListener(OnGrab);
             grabInteractable.selectExited.RemoveListener(OnRelease);
+
+            // NEW: Remove Hover Listeners
+            grabInteractable.hoverEntered.RemoveListener(OnHoverEnter);
+            grabInteractable.hoverExited.RemoveListener(OnHoverExit);
         }
     }
+
     private void OnCollisionEnter(Collision collision)
     {
         if (isBonded) return;
