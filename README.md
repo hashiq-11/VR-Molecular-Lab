@@ -4,7 +4,7 @@ A high-performance, data-driven VR chemistry simulation built with **Unity 6 LTS
 
 ---
 
-## ** Key Technical Features**
+##  Key Technical Features
 
 ### **1. Data-Driven Chemistry Engine**
 * **Flyweight Pattern:** Utilized `ScriptableObjects` (`AtomData`, `MoleculeData`) to define chemical properties and recipes. This ensures minimal memory overhead and allows for expansion (adding new molecules) without touching the codebase.
@@ -41,7 +41,7 @@ A high-performance, data-driven VR chemistry simulation built with **Unity 6 LTS
 
 ---
 
-## **🛠 Development Environment**
+## Development Environment
 * **Engine:** Unity 6 LTS (6000.3.13f1)
 * **XR Framework:** XR Interaction Toolkit 3.x
 * **Target Hardware:** Meta Quest (Android)
