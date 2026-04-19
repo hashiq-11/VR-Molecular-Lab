@@ -32,7 +32,7 @@ This project is optimized for **Meta Quest** controllers. For testing via the **
 | **Break Molecule** | **Primary Button (A / X) (While Grabbing)** | **Space Key (While Grabbing)** |
 | **UI Interaction** | **Grip Button** | **G key** |
 
-## ** Project Organization**
+## Project Organization
 * **`_ChemistryLab/Data`**: Centralized registry for all chemical definitions.
 * **`_ChemistryLab/Prefabs`**: Optimized XR Interactables with custom physics damping.
 * **`_ChemistryLab/Scripts`**: Clean C# scripts organized with `#region` blocks for readability.
