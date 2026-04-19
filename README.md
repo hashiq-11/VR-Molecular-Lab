@@ -15,7 +15,7 @@ A high-performance, data-driven VR chemistry simulation built with **Unity 6 LTS
 * **Dynamic World-Space UI:** Optimized canvases using the `Tracked Device Graphic Raycaster` for high-precision laser pointer interaction.
 * **Visual Affordance:** Integrated **DOTween** for procedural feedback (scaling, punching, and "juice") to provide clear sensory cues during grabbing and successful synthesis.
 
-### **3. Senior-Level Code Quality**
+### **3. Code Quality**
 * **Decoupled Architecture:** Strictly followed the **Singleton pattern** for global managers while maintaining modular, component-based logic for physical objects to avoid monolithic scripts.
 * **Memory Management:** Implemented explicit event unsubscription and tween cleanup in `OnDestroy` to prevent memory leaks on mobile VR hardware (Meta Quest).
 
@@ -25,12 +25,12 @@ This project is optimized for **Meta Quest** controllers. For testing via the **
 
 | Action | VR Controller Input | PC Simulator Key |
 | :--- | :--- | :--- |
-| **Movement** | **Left Joystick** | **W, A, S, D** |
-| **Turning** | **Right Joystick** | **Q, E** (Snap) |
-| **Grab Atom / Beaker** | **Grip Button** (Side) | **G** Key |
+| **Movement** | **Left Joystick** | **I, J, K, L** |
+| **Turning** | **Right Joystick** | **J, L**  |
+| **Grab Atom** | **Grip Button** (Side) | **G** Key |
 | **Toggle Laser Ray** | **Primary Button (A / X)** | **Space** Key |
-| **Break Molecule** | **Trigger Button** | **Left Mouse Click** |
-| **UI Interaction** | **Trigger** (Hover + Click) | **Left Mouse Click** |
+| **Break Molecule** | **Primary Button (A / X) (While Grabbing)** | **Space Key (While Grabbing)** |
+| **UI Interaction** | **Grip Button** | **G key** |
 
 ## ** Project Organization**
 * **`_ChemistryLab/Data`**: Centralized registry for all chemical definitions.
