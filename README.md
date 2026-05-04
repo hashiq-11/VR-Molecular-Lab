@@ -25,16 +25,16 @@ A high-performance, data-driven VR chemistry simulation built with **Unity 6 LTS
 
 ## 🎮 Controls & Locomotion
 
-This project is optimized for **Meta Quest** controllers. For testing via the **XR Interaction Simulator** on PC, equivalent keyboard shortcuts are provided:
+This project is optimized for **Meta Quest** controllers, utilizing an industry-standard layout for precision and ergonomics. For testing via the **XR Interaction Simulator** on PC, equivalent keyboard shortcuts are provided:
 
 | Action | VR Controller Input | PC Simulator Key |
 | :--- | :--- | :--- |
 | **Movement** | Left Joystick | I, J, K, L |
 | **Turning** | Right Joystick | J, L |
-| **Grab Atom** | Grip Button (Side) | G Key |
-| **Toggle Laser Ray** | Primary Button (A / X) | Space Key |
-| **Break Molecule** | Primary Button (A / X) (While Grabbing) | Space Key (While Grabbing) |
-| **UI Interaction** | Grip Button | G Key |
+| **Grab Atom** | Trigger Button (Index Finger) | G Key |
+| **Toggle Laser Ray** | Grip Button (Hold) | Space Key |
+| **Break Molecule** | Primary Button (A / X) (While Holding) | Space Key (While Grabbing) |
+| **UI Interaction** | Trigger Button (Index Finger) | G Key |
 
 ---
 
