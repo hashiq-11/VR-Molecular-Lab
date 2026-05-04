@@ -2300,7 +2300,7 @@ CharacterController:
   m_Enabled: 1
   serializedVersion: 3
   m_Height: 2
-  m_Radius: 0.5
+  m_Radius: 0.2
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
@@ -2832,7 +2832,7 @@ Transform:
   m_Children:
   - {fileID: 1102187691}
   - {fileID: 2137353382}
-  - {fileID: 2097192430}
+  - {fileID: 8625147191291959152}
   - {fileID: 360339056}
   m_Father: {fileID: 1075995039}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3652,6 +3652,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: XR Interaction Simulator
       objectReference: {fileID: 0}
+    - target: {fileID: 8135023674665499069, guid: 58d0a4ac86f2348deb02f3880c71378e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8518324294302271954, guid: 58d0a4ac86f2348deb02f3880c71378e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.90195
@@ -3968,9 +3972,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RayToggleManager
   leftRayObject: {fileID: 109434732071450779}
-  rightRayObject: {fileID: 5686134208636716432}
-  leftToggleAction: {fileID: -5982496924579745919, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  rightToggleAction: {fileID: 83097790271614945, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  rightRayObject: {fileID: 5727551280312664928}
+  leftToggleAction: {fileID: -6131295136447488360, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  rightToggleAction: {fileID: 187161793506945269, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!1 &1974235056
 GameObject:
   m_ObjectHideFlags: 0
@@ -4260,11 +4264,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &2097192430 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6246018729093990945, guid: 5bbc04112c97c4b489bf6a909c93de61, type: 3}
-  m_PrefabInstance: {fileID: 2386060477676379473}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2137353382 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4871312432548929902, guid: 4ec6580b567ea07418b362919474cdf6, type: 3}
@@ -4382,7 +4381,59 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1001 &2386060477676379473
+--- !u!114 &4019343882749381982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4247069967738923451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea1926d890492354e914f477b17923a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ChemistryFlask
+  spawnPoint: {fileID: 6751136559801099887}
+  synthesizeButton: {fileID: 9602119}
+  containedAtoms: []
+--- !u!1 &4247069967738923451
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8496980911411337532}
+  - component: {fileID: 4619181261718601855}
+  - component: {fileID: 4019343882749381982}
+  m_Layer: 0
+  m_Name: Collider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &4511684141607306215
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7597655739637791301}
+  - component: {fileID: 903999119396232561}
+  - component: {fileID: 8574057847013128691}
+  - component: {fileID: 256860400136141090}
+  m_Layer: 0
+  m_Name: beaker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1001 &4521393633155559091
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -4439,58 +4490,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bbc04112c97c4b489bf6a909c93de61, type: 3}
---- !u!114 &4019343882749381982
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4247069967738923451}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea1926d890492354e914f477b17923a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ChemistryFlask
-  spawnPoint: {fileID: 6751136559801099887}
-  synthesizeButton: {fileID: 9602119}
-  containedAtoms: []
---- !u!1 &4247069967738923451
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8496980911411337532}
-  - component: {fileID: 4619181261718601855}
-  - component: {fileID: 4019343882749381982}
-  m_Layer: 0
-  m_Name: Collider
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &4511684141607306215
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7597655739637791301}
-  - component: {fileID: 903999119396232561}
-  - component: {fileID: 8574057847013128691}
-  - component: {fileID: 256860400136141090}
-  m_Layer: 0
-  m_Name: beaker
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!135 &4619181261718601855
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4512,10 +4511,10 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.025
   m_Center: {x: 0.0006846041, y: -0.00000075995916, z: 7.3612434e-21}
---- !u!1 &5686134208636716432 stripped
+--- !u!1 &5727551280312664928 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7953538189415751217, guid: 5bbc04112c97c4b489bf6a909c93de61, type: 3}
-  m_PrefabInstance: {fileID: 2386060477676379473}
+  m_PrefabInstance: {fileID: 4521393633155559091}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &6751136559801099887
 Transform:
@@ -4613,6 +4612,11 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!4 &8625147191291959152 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6246018729093990945, guid: 5bbc04112c97c4b489bf6a909c93de61, type: 3}
+  m_PrefabInstance: {fileID: 4521393633155559091}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
