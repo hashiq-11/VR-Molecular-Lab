@@ -31,10 +31,10 @@ This project is optimized for **Meta Quest** controllers, utilizing an industry-
 | :--- | :--- | :--- |
 | **Movement** | Left Joystick | I, J, K, L |
 | **Turning** | Right Joystick | J, L |
-| **Grab Atom** | Trigger Button (Index Finger) | G Key |
-| **Toggle Laser Ray** | Grip Button (Hold) | Space Key |
-| **Break Molecule** | Primary Button (A / X) (While Holding) | Space Key (While Grabbing) |
-| **UI Interaction** | Trigger Button (Index Finger) | G Key |
+| **Grab Atom** | Trigger Button (Index Finger) | T Key |
+| **Toggle Laser Ray** | Grip Button (Hold) | G Key |
+| **Break Molecule** | Trigger Button (Index Finger) (While Holding) | T Key (While Holding) |
+| **UI Interaction** | Trigger Button (Index Finger) | T Key |
 
 ---
 
